@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosotros</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Archivo CSS personalizado -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    prueba
+  <div class="container py-5">
+    <!-- Título -->
+    <div class="text-center">
+      <h1 class="title">¿Quiénes somos?</h1>
+    </div>
+    
+    <!-- GIF o vídeo -->
+    <div class="text-center mt-4">
+      <video autoplay loop muted class="video-loop">
+        <source src="tu-video.mp4" type="video/mp4">
+        Tu navegador no soporta el formato de vídeo.
+      </video>
+    </div>
+    
+    <!-- Párrafo descriptivo -->
+    <div class="mt-5">
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit mi non quam tristique, ut malesuada justo consectetur.
+      </p>
+    </div>
+    
+    <!-- Subtítulo para trabajadores -->
+    <div class="text-center mt-5">
+      <h2 class="subtitle">Conoce a nuestro equipo</h2>
+    </div>
+    
+    <!-- Imágenes del equipo -->
+    <div class="row mt-4">
+      <!-- Imagen 1 -->
+      <div class="col-12 col-md-6 mb-4">
+        <div class="image-container">
+          <img src="imagen1.jpg" alt="Trabajador 1" class="image-main">
+          <div class="hover-content">
+            <p>Descripción del Trabajador 1</p>
+          </div>
+        </div>
+      </div>
+      <!-- Imagen 2 -->
+      <div class="col-12 col-md-6 mb-4">
+        <div class="image-container">
+          <img src="imagen2.jpg" alt="Trabajador 2" class="image-main">
+          <div class="hover-content">
+            <p>Descripción del Trabajador 2</p>
+          </div>
+        </div>
+      </div>
+      <!-- Imagen 3 -->
+      <div class="col-12 col-md-6 mb-4">
+        <div class="image-container">
+          <img src="imagen3.jpg" alt="Trabajador 3" class="image-main">
+          <div class="hover-content">
+            <p>Descripción del Trabajador 3</p>
+          </div>
+        </div>
+      </div>
+      <!-- Imagen 4 -->
+      <div class="col-12 col-md-6 mb-4">
+        <div class="image-container">
+          <img src="imagen4.jpg" alt="Trabajador 4" class="image-main">
+          <div class="hover-content">
+            <p>Descripción del Trabajador 4</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
