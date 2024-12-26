@@ -50,7 +50,7 @@
     }
 
     .nav-item a:hover {
-        text-decoration: line-through;
+        text-decoration: underline;
         text-decoration-color: black;
         text-decoration-thickness: 3px;
     }
