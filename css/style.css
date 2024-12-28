@@ -94,7 +94,6 @@
   /* Vídeo */
   .video-loop {
     width: 100%;
-    border-radius: 10px;
   }
   
   /* Párrafo descriptivo */
@@ -115,12 +114,14 @@
     position: relative;
     overflow: hidden;
     text-align: center;
+    margin:  0 auto;
   }
   
   /* Imagen principal */
   .image-main {
     width: 100%;
     transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
   }
   
   /* Imagen al pasar el ratón */
@@ -131,9 +132,9 @@
     left: 0;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
   }
   
-  /* Al pasar el ratón sobre el contenedor, cambia la imagen */
   .image-container:hover .image-main {
     opacity: 0;
   }
@@ -141,13 +142,22 @@
   .image-container:hover .image-hover {
     opacity: 1;
   }
+
+  .col-12:nth-child(1) {
+    transform: translateX(0) translateY(0);
+  }
   
-  /* Panel descriptivo debajo de la imagen */
-  .description-panel {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    padding: 10px
-}
+  .col-12:nth-child(2) {
+    transform: translateX(10%) translateY(30%);
+  }
+  
+  .col-12:nth-child(3) {
+    transform: translateX(-10%) translateY(20%);
+  }
+  
+  .col-12:nth-child(4) {
+    transform: translateX(-10%) translateY(10%);
+  }
 
 /* Footer */
     footer {
