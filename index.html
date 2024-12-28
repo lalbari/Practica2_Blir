@@ -73,16 +73,22 @@
                 <div class="row mt-4">
                 
                   <div class="col-12 col-md-6 mb-4">
-                    <div class="image-container">
+                    <div class="image-container"
+                    onclick="showOverlay(this)">
                       <img src="imagenes/bruno.png" alt="Trabajador 1" class="image-main">
                       <img src="imagenes/bruno2.png" alt="Trabajador 1 Hover" class="image-hover">
+
+                      <div class="image-overlay image-overlay-1"><img src="imagenes/diálogo bruno.png" alt="descripción"></div>
                     </div>
                   </div>
                  
                   <div class="col-12 col-md-6 mb-4">
-                    <div class="image-container">
+                    <div class="image-container"
+                    onclick="showOverlay(this)">
                       <img src="imagenes/lara.png" alt="Trabajador 2" class="image-main">
                       <img src="imagenes/lara2.png" alt="Trabajador 2 Hover" class="image-hover">
+
+                      <div class="image-overlay image-overlay-2"><img src="imagenes/diálogo bruno.png" alt="descripción"></div>
                     </div>
                   </div>
                 
@@ -137,6 +143,21 @@
 
      <!-- Bootstrap -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script>
+      function showOverlay(container) {
+       
+        if (container.classList.contains('active')) {
+          container.classList.remove('active'); 
+        } 
+
+        else { document.querySelectorAll('.image-container.active').forEach((el) => {
+            el.classList.remove('active');
+          });
+          container.classList.add('active');
+        }
+      }
+    </script>
 
 </body>
 
