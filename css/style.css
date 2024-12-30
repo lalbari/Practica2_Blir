@@ -216,21 +216,29 @@
   }
   
 
+/* Contenedor principal con flexbox */
+.service-images-container {
+  display: flex;
+  justify-content: space-around; /* Espacio uniforme entre las imágenes */
+  align-items: center; /* Alineación vertical al centro */
+  gap: 30px; /* Espaciado entre las imágenes */
+}
+
 /* Contenedor de cada imagen */
 .service-image-container {
   position: relative; 
-  display: inline-block;
-  width: 100%;
-  height: 250px; 
-  margin-bottom: 30px; 
+  width: 250px; /* Tamaño fijo de las imágenes */
+  height: 300px;
+  margin-bottom: 30px;
+  margin-top: 80px;
+  text-align: center; /* Centrado de los textos */
 }
 
 /* Imágenes servicios */
 .service-image {
-  position: absolute; 
-  width: 80%; 
-  height: auto; 
-  animation: heartbeat 1.5s ease-in-out infinite; 
+  width: 100%;
+  height: auto;
+  animation: heartbeat 1.5s ease-in-out infinite;
 }
 
 /* Animación de latidos */
@@ -252,33 +260,56 @@
   }
 }
 
-/* Posicionamiento para cada imagen */
-.image-1 {
-  top: 50px;  
-  left: 70px;  
+/* Estilo general para los cuadros de texto */
+.service-text-slide {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, bottom 0.3s ease, background-color 0.3s ease;
 }
 
-.image-2 {
-  top: 20px;   
-  left: -15px; 
+/* Mostrar el texto al pasar el ratón */
+.service-image-container:hover .service-text-slide {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.image-3 {
-  top: 10px;    
-  left: 20px; 
+/* Estilos únicos para cada texto */
+.text-style-1 {
+  background-color: #008c47; /* Fondo azul */
+  color: #ffe8ce; /* Texto blanco */
 }
 
+.text-style-2 {
+  background-color: #5c30ff; /* Fondo verde */
+  color: #ffe8ce; /* Texto blanco */
+}
+
+.text-style-3 {
+  background-color: #e63c23; /* Fondo rojo */
+  color: #ffe8ce; /* Texto blanco */
+}
 
 /* Ajustes para pantallas móviles */
 @media (max-width: 768px) {
   .service-image {
-    top: 0;
-    left: 0; 
     width: 100%;
     margin-bottom: 20px;
   }
-}
 
+  .service-images-container {
+    flex-direction: column; /* En pantallas pequeñas, las imágenes estarán en columna */
+    align-items: center;
+  }
+}
 
 /* Footer */
     footer {
