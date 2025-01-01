@@ -1,7 +1,7 @@
 /* Estilos generales*/
     body {
         background-color: black;
-        color: white;
+        color: #ffe8ce;
         font-family: 'Bahnschrift', sans-serif;
     }
 
@@ -90,6 +90,7 @@
     font-size: 3rem;
     text-align: center;
     margin-top: 160px;
+    color: #ffe8ce;
   }
   
   /* Vídeo */
@@ -113,6 +114,7 @@
     text-align: center;
     margin-bottom: 1rem;
     margin-top: 8rem;
+    color: #ffe8ce;
   }
   
   /* Estilos de imágenes */
@@ -206,7 +208,7 @@
 
   .image-overlay-4 img {
     top: -200px;
-    left: 180px;
+    left: 150px;
   }
 
   /* Mostrar la capaa */
@@ -216,22 +218,22 @@
   }
   
 
-/* Contenedor principal con flexbox */
+/* Contenedor general */
 .service-images-container {
   display: flex;
-  justify-content: space-around; /* Espacio uniforme entre las imágenes */
-  align-items: center; /* Alineación vertical al centro */
-  gap: 30px; /* Espaciado entre las imágenes */
+  justify-content: space-around; 
+  align-items: center; 
+  gap: 30px; 
 }
 
 /* Contenedor de cada imagen */
 .service-image-container {
   position: relative; 
-  width: 250px; /* Tamaño fijo de las imágenes */
+  width: 270px; 
   height: 300px;
   margin-bottom: 30px;
   margin-top: 80px;
-  text-align: center; /* Centrado de los textos */
+  text-align: center; 
 }
 
 /* Imágenes servicios */
@@ -260,7 +262,7 @@
   }
 }
 
-/* Estilo general para los cuadros de texto */
+/* Cuadros de texto */
 .service-text-slide {
   position: absolute;
   left: 0;
@@ -276,26 +278,26 @@
   transition: opacity 0.3s ease, bottom 0.3s ease, background-color 0.3s ease;
 }
 
-/* Mostrar el texto al pasar el ratón */
+/* Texto al pasar el ratón */
 .service-image-container:hover .service-text-slide {
   opacity: 1;
   pointer-events: auto;
 }
 
-/* Estilos únicos para cada texto */
+/* Texto individual */
 .text-style-1 {
-  background-color: #008c47; /* Fondo azul */
-  color: #ffe8ce; /* Texto blanco */
+  background-color: #ffe8ce; 
+  color: black; 
 }
 
 .text-style-2 {
-  background-color: #5c30ff; /* Fondo verde */
-  color: #ffe8ce; /* Texto blanco */
+  background-color: #ffe8ce; 
+  color: black; 
 }
 
 .text-style-3 {
-  background-color: #e63c23; /* Fondo rojo */
-  color: #ffe8ce; /* Texto blanco */
+  background-color: #ffe8ce; 
+  color: black; 
 }
 
 /* Ajustes para pantallas móviles */
@@ -306,7 +308,7 @@
   }
 
   .service-images-container {
-    flex-direction: column; /* En pantallas pequeñas, las imágenes estarán en columna */
+    flex-direction: column; 
     align-items: center;
   }
 }
