@@ -43,6 +43,7 @@
     
             <!-- Contenido principal -->
             <main class="col-md-9 p-3 content-column">
+              
               <div class="container py-5">
    
                 <div class="text-center">
@@ -123,17 +124,17 @@
                 <div class="service-images-container">
                   <div class="service-image-container">
                     <img src="imagenes/servicios-1.png" alt="Servicio 1" class="service-image">
-                    <div class="service-text-slide text-style-1">Texto del servicio 1</div>
+                    <div class="service-text-slide text-style-1">En BLIR, apoyamos el talento de nuestra comunidad trabajando exclusivamente con artistas locales. Creemos en dar voz a creadores cercanos, impulsando la economía local y destacando la autenticidad en cada proyecto que realizamos.</div>
                   </div>
                 
                   <div class="service-image-container">
                     <img src="imagenes/servicios-2.png" alt="Servicio 2" class="service-image">
-                    <div class="service-text-slide text-style-2">Texto del servicio 2</div>
+                    <div class="service-text-slide text-style-2">Nos comprometemos con un futuro más verde. Desde la reducción de residuos hasta la implementación de prácticas responsables, cada proyecto se realiza con la sostenibilidad en mente. Diseñamos pensando en el impacto positivo para el planeta.</div>
                   </div>
                 
                   <div class="service-image-container">
                     <img src="imagenes/servicios-3.png" alt="Servicio 3" class="service-image">
-                    <div class="service-text-slide text-style-3">Texto del servicio 3</div>
+                    <div class="service-text-slide text-style-3">Elegimos materiales que respetan al medio ambiente sin comprometer la calidad. Papel reciclado, tintas naturales y procesos responsables son solo algunos de los elementos clave para lograr un diseño que sea bello y sostenible.</div>
                   </div>
                 </div>
 
@@ -176,22 +177,7 @@
 
      <!-- Bootstrap -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-    <script>
-      function showOverlay(container) {
-       
-        if (container.classList.contains('active')) {
-          container.classList.remove('active'); 
-        } 
-
-        else { document.querySelectorAll('.image-container.active').forEach((el) => {
-            el.classList.remove('active');
-          });
-          container.classList.add('active');
-        }
-      }
-    </script>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
