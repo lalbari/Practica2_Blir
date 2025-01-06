@@ -568,14 +568,14 @@
   font-size: 1.5rem;
   line-height: 1.8;
   color:#ffe8ce;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .text-content-proyecto {
   font-size: 1.2rem;
   line-height: 1.8;
   color:#ffe8ce;
-  margin-bottom: 20px;
+  min-height: 30vh;
 }
 
 .credits-proyecto {
@@ -633,14 +633,13 @@
     font-size: 1rem;
     line-height: 1.8;
     color:#ffe8ce;
-    margin-bottom: 15px;
   }
 
   .text-content-proyecto {
     font-size: 0.8rem;
     line-height: 1.8;
     color:#ffe8ce;
-    margin-bottom: 20px;
+    min-height: 30vh;
   }
   
   .credits-proyecto {
@@ -667,14 +666,14 @@
     font-size: 1.25rem;
     line-height: 1.8;
     color:#ffe8ce;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .text-content-proyecto {
     font-size: 1rem;
     line-height: 1.8;
     color:#ffe8ce;
-    margin-bottom: 30px;
+    min-height: 35vh;
   }
   
   .credits-proyecto {
