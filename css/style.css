@@ -80,10 +80,318 @@
         color: #f6bc3f;
     }
 
-/* Contenido principal */
-    .content-column {
-        padding: 30px 0px 0px 0px;
+
+/* Stickers */
+.container-grid-stickers {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sticker-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.sticker-container-movil {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.sticker {
+    position: absolute;
+    width: 5vw;
+    height: auto;
+    cursor: grab;
+    transition: transform 0.2s ease;
+    z-index: 3;
+    pointer-events: all;
+}
+
+.sticker-movil {
+    position: absolute;
+    width: 15vw;
+    height: auto;
+    cursor: grab;
+    transition: transform 0.2s ease;
+    z-index: 3;
+    pointer-events: all;
+}
+  
+  .sticker:active {
+    cursor: grabbing;
+    transform: scale(1.1);
+  }
+
+  .sticker-movil:active {
+    cursor: grabbing;
+    transform: scale(1.1);
+  }
+
+  .sticker01 {
+    top: 20%;
+    left: 70%;
+    rotate:10deg;
+  }
+
+  .sticker02 {
+    top: 40%;
+    left: 29%;
+    rotate:-20deg;
+  }
+
+  .sticker03 {
+    top: 20%;
+    left: 6%;
+    rotate:30deg;
+  }
+
+  .sticker14 {
+    top: 8%;
+    left: 35%;
+    rotate:-10deg;
+  }
+
+  .sticker11 {
+    top: 65%;
+    left: 63%;
+    rotate:10deg;
+  }
+
+  .sticker01-movil {
+    top: 7%;
+    left: 65%;
+    rotate:10deg;
+  }
+
+  .sticker02-movil {
+    top: 49%;
+    left: 33%;
+    rotate:-20deg;
+  }
+
+  .sticker03-movil {
+    top: 31%;
+    left: 3%;
+    rotate:30deg;
+  }
+
+  .sticker14-movil {
+    top: 20%;
+    left: 70%;
+    rotate:15deg;
+  }
+
+  .sticker11-movil {
+    top: 69%;
+    left: 70%;
+    rotate:10deg;
+  }
+ 
+  
+
+/* Modal */
+.sticker-modal {
+    width: 1000px;
+    height: 300px;
+    background: url('../imagenes/index/fondo-modal.webp') no-repeat center center;
+    background-size: contain;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    padding-top:123px;
+  }
+  
+  .btn-subscribe { 
+    color: #ffe8ce; 
+    border:none;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    font-size: 1rem; 
+    cursor: pointer;
+    margin: 0;
+    padding:0;
+  }
+  
+  .btn-subscribe:hover {
+    color: #5c30ff; 
+  }
+  
+  .form-control,
+  .btn-subscribe {
+    width: 68%;
+    height:30%;
+    margin: 0 auto;
+  }
+  
+  .form-control.email-input {
+    background-color: #ffe8ce;  
+    border:none;           
+    border-radius: 50px;                                 
+    padding-left: 0;             
+    color: #5d30ff8a; 
+    padding: 15px;                
+  }
+
+  .form-control.email-input:focus { 
+    color: #5c30ff; 
+  }
+
+  
+/* Masonry Grid Inicio Proyectos */
+.inicio-grid {
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.inicio-grid-item {
+    width: calc(33.33% - 10px);
+    margin-bottom:15px;
+}
+
+.inicio-grid-item img {
+    width:100%;
+    border-radius:10px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .inicio-grid-item {
+        width: calc(50% - 10px);
     }
+}
+
+@media (max-width: 576px) {
+    .inicio-grid-item {
+        width: 100%;
+    }
+}
+
+/* Carousel merchandising */
+.hover-container {
+    position: relative;
+    overflow: hidden; 
+  }
+  
+.main-image {
+    display: block;
+    border-radius: 10px;
+}
+  
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+}
+  
+.hover-container:hover .main-image {
+    opacity: 0;
+}
+
+.hover-container:hover .hover-image {
+    opacity: 1; 
+}
+  
+marquee {
+    font-size:40px;
+    animation: colorChangemarquee 15s linear infinite;
+}
+
+@keyframes colorChangemarquee {
+    0% { color:#5c30ff; }
+    16% { color:#e63c23; }
+    33% { color:#f6bc3f; }
+    50% { color:#f791c3; }
+    66% { color:#008c47; }
+    83% { color:#ffe8ce; }
+    100% { color:#5c30ff; }
+}
+
+/*Trabajemos Juntxs*/
+.stickers-trabajemos {
+  padding-top:30px;
+  width:50%;
+  height:auto;
+}
+
+.gif-trabajemos {
+  margin-top:-18%;
+  width:50%;
+  height:auto;
+}
+
+.form-control-trabajemos.email-input-trabajemos {
+  background-color: #ffe8ce;  
+  border:none;           
+  border-radius: 50px;                                 
+  padding-left: 0;             
+  color: #5d30ff8a; 
+  padding: 15px;                
+}
+
+.form-control-trabajemos.email-input-trabajemos:focus { 
+  color: #5c30ff; 
+}
+
+.form-control-trabajemos {
+  width: 40%;
+  height:30%;
+  margin: 0 auto;
+}
+
+.btn-trabajemos { 
+  color: #ffe8ce; 
+  background-color: #5c30ff;
+  border:#5c30ff solid;
+  border-width:2px;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+  width: 25%;
+  height:30%;
+  margin: 0 auto;
+  margin-bottom:10%;
+  padding:10px;
+  cursor: pointer;
+}
+
+.btn-trabajemos:hover {
+  color: #5c30ff;
+  background-color: none;
+  border:#5c30ff solid;
+  border-width: 2px;
+}
+
+@media (max-width: 767px) {
+  .stickers-trabajemos{
+    width:80%;
+  }
+  .gif-trabajemos {
+    width:65%;
+  }
+  .form-control-trabajemos {
+    width:60%;
+  }
+  .btn-trabajemos {
+      width:40%;
+  }
+}
+
+
 
 /* Título principal */
 .title {
