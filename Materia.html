@@ -18,7 +18,7 @@
     <!-- Librería LocomotiveScrollJS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
 </head>
-<body id="body">
+<body>
 
     <div class="container-fluid">
         <div class="row">
@@ -44,7 +44,8 @@
             </nav>
     
             <!-- Contenido principal -->
-            <main class="col-md-9 content-column">
+        <div class="col-md-9 content-column" id="main">
+            <main>
                 <div class="container">
                     <div class="image-container-inicio">
                         <img src="./imagenes/Materia/Materia-2.webp" alt="Image Principal" class="scroll-image" data-scroll data-scroll-speed="2">
@@ -132,38 +133,37 @@
                     </div>
                 </div>
             </main>
+               <!-- Footer -->
+               <footer>
+                <div class="row footer">
+                    <div class="col-md-4">
+                        <p class="copyright">All Content © BLIR 2024</p>
+                    </div>
+                        
+                    <div class="col-md-4 contenedorcorreo">
+                        <p class="correo">info@blirestudio.com</p>
+                    </div>
+                        
+                    <div class="col-md-4 social-icons">
+                        <a href="#" title="Facebook" class="social-icon">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" title="Instagram" class="social-icon">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" title="LinkedIn" class="social-icon">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" title="Behance" class="social-icon">
+                            <i class="bi bi-behance"></i>
+                        </a>
+                    </div>
+                
+                </div>
+            </footer>
         </div>
     </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="row footer">
-            <div class="col-md-4">
-                <p class="copyright">All Content © BLIR 2024</p>
-            </div>
-                
-            <div class="col-md-4 contenedorcorreo">
-                <p class="correo">info@blirestudio.com</p>
-            </div>
-                
-            <div class="col-md-4 social-icons">
-                <a href="#" title="Facebook" class="social-icon">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a href="#" title="Instagram" class="social-icon">
-                    <i class="bi bi-instagram"></i>
-                </a>
-                <a href="#" title="LinkedIn" class="social-icon">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-                <a href="#" title="Behance" class="social-icon">
-                    <i class="bi bi-behance"></i>
-                </a>
-            </div>
-        
-        </div>
-
-      </footer>
+</div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>

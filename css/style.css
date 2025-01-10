@@ -6,6 +6,9 @@
     }
 
 /* Navbar*/
+    nav {
+      z-index: 100;
+    }
     .navbar-column {
         top: 0;
         display: flex;
@@ -39,7 +42,7 @@
         text-decoration: none;
         font-weight: bold;
         border-radius: 100px;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         text-align: left;
     }
 
@@ -783,6 +786,7 @@ marquee {
     .correo {
         text-decoration: underline;
         animation: colorChangecorreo 15s linear infinite;
+        font-size: 0.8rem;
     }
 
     @keyframes colorChangecorreo {
@@ -797,12 +801,19 @@ marquee {
 
     .copyright {
         animation: colorChangecopyright 15s linear infinite;
+        font-size: 0.8rem;
+        margin-bottom: none !important;
     }
 
     @media (max-width: 767px) {
         .copyright {
             text-align: center;
+            font-size: 0.8rem;
         }
+
+        .correo {
+          font-size: 0.8rem;
+      }
     }
 
     @keyframes colorChangecopyright {
@@ -848,6 +859,7 @@ marquee {
   position: relative;
   min-height: 100vh;
   height: auto;
+  padding: 0rem !important;
 }
 
 .titulo-proyecto {
